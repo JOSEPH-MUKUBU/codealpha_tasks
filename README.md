@@ -1,138 +1,136 @@
-# CodeAlpha Machine Learning Projects
+# 🤖 CodeAlpha Machine Learning Projects
 
 > **Auteur** : Joseph Mukubu Kapoya  
-> **Organisation** : CodeAlpha ML Internship  
-> **Date** : Juillet 2026
+> **Organisation** : CodeAlpha Machine Learning Internship  
+> **Période** : Juillet 2026  
+> **Dépôt GitHub** : [codealpha_tasks](https://github.com/JOSEPH-MUKUBU/codealpha_tasks)
 
 ---
 
-## 📋 Présentation
+## 📋 Présentation Générale
 
-Ce repository contient **3 projets complets de Machine Learning** réalisés dans le cadre du stage CodeAlpha :
+Ce dépôt regroupe **3 projets complets de Machine Learning et de Deep Learning** réalisés dans le cadre du stage pratique chez **CodeAlpha**. Chaque projet aborde une problématique distincte de l'apprentissage supervisé, allant des modèles prédictifs tabulaires classiques aux réseaux neuronaux profonds de pointe pour l'analyse audio et la vision par ordinateur.
 
-1. **Credit Scoring Model** — Prédiction de la solvabilité bancaire
-2. **Emotion Recognition from Speech** — Reconnaissance d'émotions dans la parole
-3. **Handwritten Character Recognition** — Reconnaissance de chiffres manuscrits
+### 🌟 Les Projets inclus :
+1.  **💳 Credit Scoring Model** : Modélisation et prédiction de la solvabilité bancaire.
+2.  **🎵 Emotion Recognition from Speech** : Reconnaissance et classification des émotions dans la parole.
+3.  **✍️ Handwritten Character & Letter Recognition** : Reconnaissance optique de chiffres (MNIST) et de lettres (EMNIST).
 
 ---
 
-## 🗂️ Structure du Repository
+## 🗂️ Structure détaillée du Dépôt
 
-```
+Voici l'organisation des fichiers au sein du projet :
+
+```text
 CodeAlpha_ML_Projects/
-├── CodeAlpha_CreditScoring/
-│   ├── credit_scoring.py
-│   └── README.md
-├── CodeAlpha_EmotionRecognition/
-│   ├── emotion_recognition.py
-│   └── README.md
-├── CodeAlpha_HandwrittenRecognition/
-│   ├── handwritten_recognition.py
-│   └── README.md
-├── requirements.txt
-└── README.md (ce fichier)
+│
+├── 💳 CodeAlpha_CreditScoring/
+│   ├── credit_scoring.py           # Script principal de modélisation
+│   ├── credit_scoring_results.png  # Graphique d'évaluation (Courbes ROC)
+│   └── README.md                   # Documentation dédiée au Credit Scoring
+│
+├── 🎵 CodeAlpha_EmotionRecognition/
+│   ├── emotion_recognition.py      # Traitement audio et réseaux CNN/LSTM
+│   ├── best_model.h5               # Poids optimaux sauvegardés
+│   ├── emotion_recognition_results.png # Courbes d'entraînement et matrice de confusion
+│   └── README.md                   # Documentation dédiée à la reconnaissance des émotions
+│
+├── ✍️ CodeAlpha_HandwrittenRecognition/
+│   ├── handwritten_recognition.py  # Script de classification de chiffres (MNIST)
+│   ├── emnist_letters.py           # Script de classification de lettres (EMNIST)
+│   ├── best_model.h5               # Meilleur modèle MNIST sauvegardé
+│   ├── emnist_best_model.h5        # Meilleur modèle EMNIST sauvegardé
+│   ├── *predictions.png / *results.png # Graphiques d'analyse des prédictions
+│   └── README.md                   # Documentation dédiée à la reconnaissance de caractères
+│
+├── .gitignore                      # Configuration Git pour exclure venv/ et caches
+├── requirements.txt                # Dépendances logicielles du projet global
+└── README.md                       # Présentation globale (ce fichier)
 ```
 
 ---
 
-## 🚀 Installation
+## 🛠️ Installation et Configuration
 
-### 1. Cloner le repository
+Pour exécuter ces projets localement, veuillez suivre les étapes suivantes :
+
+### 1. Cloner le dépôt
 ```bash
-git clone https://github.com/votre-username/CodeAlpha_ML_Projects.git
-cd CodeAlpha_ML_Projects
+git clone https://github.com/JOSEPH-MUKUBU/codealpha_tasks.git
+cd codealpha_tasks
 ```
 
-### 2. Créer un environnement virtuel (recommandé)
+### 2. Configurer l'environnement virtuel Python
+Il est vivement conseillé d'utiliser un environnement virtuel isolé pour éviter les conflits de dépendances.
+
 ```bash
+# Création de l'environnement virtuel
 python -m venv venv
 
-# Windows
+# Activation - Windows (Command Prompt ou PowerShell)
 venv\Scripts\activate
 
-# Mac/Linux
+# Activation - macOS / Linux
 source venv/bin/activate
 ```
 
 ### 3. Installer les dépendances
+Installez l'ensemble des modules requis en une seule commande :
 ```bash
 pip install -r requirements.txt
 ```
 
 ---
 
-## 📦 Dépendances
+## ⚙️ Synthèse des Modèles, Datasets et Performances
 
-| Package | Version | Utilisation |
-|---------|---------|-------------|
-| Python | ≥3.8 | Langage de base |
-| NumPy | ≥1.21 | Calculs numériques |
-| Pandas | ≥1.3 | Manipulation de données |
-| Matplotlib | ≥3.4 | Visualisations |
-| Seaborn | ≥0.11 | Visualisations avancées |
-| Scikit-learn | ≥1.0 | Modèles classiques (LR, RF, DT) |
-| TensorFlow | ≥2.8 | Deep Learning (CNN, LSTM) |
-| Keras | ≥2.8 | API haut niveau pour TensorFlow |
-| Librosa | ≥0.9 | Traitement audio (MFCC) |
+Le tableau ci-dessous synthétise la méthodologie et les approches développées dans chacun des trois projets :
+
+| Projet | Objectif principal | Dataset exploité | Modèles & Algorithmes | Métriques clés évaluées |
+| :--- | :--- | :--- | :--- | :--- |
+| **Credit Scoring** | Prédire le risque de défaut de paiement d'un emprunteur. | **German Credit Dataset** (UCI Repository) | Régression Logistique, Arbre de Décision, Random Forest. | Accuracy, Précision, Rappel, F1-Score, ROC-AUC. |
+| **Emotion Recognition** | Détecter l'état émotionnel (8 classes) dans la voix humaine. | **RAVDESS** (Ryerson Emotional Speech Audio) | CNN 2D (sur spectrogramme MFCC), LSTM Bidirectionnel. | Classification Report, Matrice de Confusion, Val Accuracy. |
+| **Handwritten Character** | Classer des caractères manuscrits (chiffres & lettres). | **MNIST** & **EMNIST** (Extended MNIST) | CNN 2D multi-couches (type VGG/LeNet) avec Data Augmentation. | Accuracy, Courbe de Perte, Visualisation des erreurs. |
 
 ---
 
-## ▶️ Exécution des Projets
+## 🚀 Guide d'Exécution rapide
 
-### Projet 1 : Credit Scoring
+### 💳 1. Évaluation du Risque de Crédit
+Exécutez le script pour comparer les algorithmes de classification classique :
 ```bash
 cd CodeAlpha_CreditScoring
 python credit_scoring.py
 ```
-- Dataset téléchargé automatiquement depuis UCI
-- Résultats sauvegardés dans `credit_scoring_results.png`
+*Le script télécharge le dataset et génère la courbe ROC sous `credit_scoring_results.png`.*
 
-### Projet 2 : Emotion Recognition
+### 🎵 2. Reconnaissance Vocale des Émotions
+Pour entraîner les réseaux de neurones CNN et LSTM :
 ```bash
-cd CodeAlpha_EmotionRecognition
-# Télécharger d'abord le dataset RAVDESS (voir README du projet)
+cd ../CodeAlpha_EmotionRecognition
+# (Consultez le README spécifique pour télécharger le vrai dataset RAVDESS)
 python emotion_recognition.py
 ```
-- Dataset RAVDESS à télécharger manuellement
-- Modèles sauvegardés : `model_cnn.h5`, `model_lstm.h5`
+*Génère le graphique d'entraînement et la matrice de confusion sous `emotion_recognition_results.png` ainsi que les fichiers `.h5` des modèles.*
 
-### Projet 3 : Handwritten Recognition
+### ✍️ 3. Reconnaissance d'Écritures Manuscrits
+Pour entraîner les modèles CNN sur les chiffres (MNIST) ou les lettres (EMNIST) :
 ```bash
-cd CodeAlpha_HandwrittenRecognition
+cd ../CodeAlpha_HandwrittenRecognition
+# Pour classifier les chiffres 0-9 (MNIST)
 python handwritten_recognition.py
+
+# Pour classifier les lettres A-Z/a-z (EMNIST)
+python emnist_letters.py
 ```
-- Dataset MNIST téléchargé automatiquement via Keras
-- Modèle sauvegardé : `mnist_cnn_model.h5`
+*Génère les visualisations d'exemples de prédictions et les courbes d'apprentissage associées.*
 
 ---
 
-## 📊 Résumé des Modèles et Résultats Attendus
+## 📞 Informations & Contact
 
-| Projet | Algorithmes | Métriques Clés | Dataset |
-|--------|-------------|----------------|---------|
-| Credit Scoring | Logistic Regression, Decision Tree, Random Forest | Accuracy, Precision, Recall, F1, ROC-AUC | German Credit (UCI) |
-| Emotion Recognition | CNN, LSTM | Accuracy, Classification Report | RAVDESS |
-| Handwritten Recognition | CNN (LeNet-style) | Accuracy, Confusion Matrix | MNIST |
-
----
-
-## 📹 Soumission du Stage (CodeAlpha)
-
-1. ✅ Publier sur LinkedIn en mentionnant **@CodeAlpha**
-2. ✅ Uploader le code sur GitHub : repository nommé `CodeAlpha_ProjectName`
-3. ✅ Poster une vidéo explicative sur LinkedIn avec le lien GitHub
-4. ✅ Soumettre via le formulaire du groupe WhatsApp
-
----
-
-## 📞 Contact
-
-- **Website** : www.codealpha.tech
-- **WhatsApp** : +91 93365 76683
-- **Email** : services@codealpha.tech
-
----
-
-## 📝 License
-
-Ce projet est réalisé dans le cadre du stage CodeAlpha Machine Learning.
+*   **Organisation** : [CodeAlpha](https://www.codealpha.tech/)
+*   **Auteur** : Joseph Mukubu Kapoya
+*   **Email de l'Auteur** : joseph.mukubukapoya@polytechnicien.tn
+*   **Lien du Stage** : Stage pratique en Machine Learning et Deep Learning.
