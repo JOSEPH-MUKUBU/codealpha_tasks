@@ -1,4 +1,4 @@
-# ✍️ Handwritten Character & Letter Recognition — CodeAlpha
+#  Handwritten Character & Letter Recognition — CodeAlpha
 
 Ce projet implémente des modèles d'apprentissage profond pour la reconnaissance de caractères manuscrits. Il comprend deux volets distincts :
 1.  **Reconnaissance de chiffres** (0-9) en utilisant le dataset classique **MNIST**.
@@ -8,7 +8,7 @@ Les deux volets s'appuient sur des Réseaux de Neurones Convolutifs (CNN) profon
 
 ---
 
-## 📋 Table des matières
+##  Table des matières
 1. [Architecture générale](#-architecture-générale)
 2. [Volet 1 : Chiffres Manuscrits (MNIST)](#-volet-1--chiffres-manuscrits-mnist)
 3. [Volet 2 : Lettres & Caractères (EMNIST)](#-volet-2--lettres--caractères-emnist)
@@ -18,12 +18,12 @@ Les deux volets s'appuient sur des Réseaux de Neurones Convolutifs (CNN) profon
 
 ---
 
-## ⚙️ Architecture générale
+##  Architecture générale
 La vision par ordinateur a grandement bénéficié des architectures convolutives (CNN) pour l'extraction de caractéristiques spatiales dans les images. Ce projet met en oeuvre des réseaux multicouches intégrant de la normalisation par batch (`BatchNormalization`), des abandons régulateurs (`Dropout`), et de l'augmentation artificielle des données en temps réel (`ImageDataGenerator`) afin de maximiser la généralisation sur les écritures manuscrites diverses.
 
 ---
 
-## 🔢 Volet 1 : Chiffres Manuscrits (MNIST)
+##  Volet 1 : Chiffres Manuscrits (MNIST)
 *   **Fichier :** `handwritten_recognition.py`
 *   **Dataset :** MNIST (70 000 images en niveaux de gris de taille 28x28 pixels).
 *   **Classes :** 10 classes correspondantes aux chiffres de `0` à `9`.
@@ -36,7 +36,7 @@ La vision par ordinateur a grandement bénéficié des architectures convolutive
 
 ---
 
-## 🔤 Volet 2 : Lettres & Caractères (EMNIST)
+##  Volet 2 : Lettres & Caractères (EMNIST)
 *   **Fichier :** `emnist_letters.py`
 *   **Dataset :** EMNIST (Extended MNIST), qui étend MNIST avec des lettres latines majuscules et minuscules.
 *   **Sous-ensembles disponibles (sélectionnables dans la configuration) :**
@@ -50,7 +50,7 @@ La vision par ordinateur a grandement bénéficié des architectures convolutive
 
 ---
 
-## 🤖 Architecture du Modèle CNN
+##  Architecture du Modèle CNN
 Le réseau convolutif partagé par les deux scripts utilise une architecture optimisée inspirée de LeNet et VGG :
 
 1.  **Bloc Convolutif 1 :**
@@ -70,7 +70,7 @@ Le réseau convolutif partagé par les deux scripts utilise une architecture opt
 
 ---
 
-## 🚀 Installation et Utilisation
+##  Installation et Utilisation
 
 ### Dépendances requises
 Le projet nécessite TensorFlow, Scikit-learn, Matplotlib, Seaborn et Scipy (pour les transformations d'images).
@@ -91,7 +91,7 @@ python emnist_letters.py
 
 ---
 
-## 📈 Résultats et Visualisations
+##  Résultats et Visualisations
 
 Les scripts génèrent de nombreuses visualisations et sauvegardent les résultats sous forme d'images :
 
