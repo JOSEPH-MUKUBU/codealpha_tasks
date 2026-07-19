@@ -1,10 +1,10 @@
-# 🎵 Emotion Recognition from Speech — CodeAlpha
+#  Emotion Recognition from Speech — CodeAlpha
 
 Ce projet implémente un système de reconnaissance d'émotions à partir de la parole (Speech Emotion Recognition - SER) en utilisant des réseaux de neurones profonds. Il compare l'efficacité d'un Réseau de Neurones Convolutif (CNN 2D) et d'un Réseau de Neurones Récurrents (LSTM Bidirectionnel) sur le jeu de données RAVDESS.
 
 ---
 
-## 📋 Table des matières
+##  Table des matières
 1. [Présentation du projet](#-présentation-du-projet)
 2. [Dataset (RAVDESS)](#-dataset-ravdess)
 3. [Extraction des Features (MFCC)](#-extraction-des-features-mfcc)
@@ -14,12 +14,12 @@ Ce projet implémente un système de reconnaissance d'émotions à partir de la 
 
 ---
 
-## 📋 Présentation du projet
+##  Présentation du projet
 La reconnaissance des émotions vocales est un domaine complexe à l'intersection du traitement du signal audio et du Deep Learning. Ce projet vise à classifier des signaux audio de parole humaine selon 8 émotions distinctes. Il explore deux approches architecturales majeures en Deep Learning pour traiter des données séquentielles/spectrales : les CNN 2D (convolutions spatiales sur spectrogrammes) et les LSTM (réseaux récurrents adaptés aux séries temporelles).
 
 ---
 
-## 📂 Dataset (RAVDESS)
+##  Dataset (RAVDESS)
 Le projet exploite le dataset de référence **RAVDESS** (Ryerson Audio-Visual Database of Emotional Speech and Song).
 *   **Contenu :** Fichiers audio au format `.wav` enregistrés par 24 acteurs professionnels (12 hommes, 12 femmes) vocalisant des phrases avec des expressions émotionnelles précises.
 *   **Émotions cibles (8 classes) :**
@@ -42,7 +42,7 @@ Pour tester avec les vraies voix :
 
 ---
 
-## 🔧 Extraction des Features (MFCC)
+##  Extraction des Features (MFCC)
 Le signal audio brut est complexe. Pour l'apprentissage automatique, nous le convertissons en représentation temps-fréquence :
 *   **MFCC (Mel-Frequency Cepstral Coefficients) :** Extraction de 40 coefficients MFCC décrivant l'enveloppe spectrale du signal.
 *   **Deltas & Delta-Deltas :** Calcul des dérivées premières et secondes des MFCC pour capturer la dynamique temporelle (vitesse et accélération des changements de fréquences).
@@ -51,7 +51,7 @@ Le signal audio brut est complexe. Pour l'apprentissage automatique, nous le con
 
 ---
 
-## 🤖 Architecture des Modèles
+##  Architecture des Modèles
 
 Le script construit et compare deux architectures :
 
@@ -73,7 +73,7 @@ Ce modèle traite le signal comme une série temporelle pure de dimension `(130,
 
 ---
 
-## 🚀 Installation et Utilisation
+##  Installation et Utilisation
 
 ### Dépendances requises
 En plus des packages standard, ce projet nécessite `librosa` et `tensorflow`.
@@ -95,7 +95,7 @@ Les callbacks configurés incluent :
 
 ---
 
-## 📈 Résultats et Visualisations
+##  Résultats et Visualisations
 
 À l'issue de l'entraînement, les fichiers suivants sont générés :
 *   `best_model.h5` / `model_cnn_final.h5` / `model_lstm_final.h5` : Modèles sérialisés réutilisables pour inférence.
