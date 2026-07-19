@@ -1,0 +1,22 @@
+# CodeAlpha ML Projects - Requirements
+# Installation : pip install -r requirements.txt
+
+# Data Science & ML Basiques
+numpy>=1.21.0
+pandas>=1.3.0
+scikit-learn>=1.0.0
+
+# Visualisation
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Deep Learning (TensorFlow/Keras)
+tensorflow>=2.8.0
+
+# Traitement Audio (pour Emotion Recognition)
+librosa>=0.9.0
+resampy>=0.3.0      # <-- AJOUTÉ : requis par librosa pour le resampling
+soundfile>=0.10.0   # <-- AJOUTÉ : pour la lecture audio
+
+# Utilitaires
+jupyterlab>=3.0.0
