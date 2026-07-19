@@ -1,4 +1,4 @@
-# 🤖 CodeAlpha Machine Learning Projects
+#  CodeAlpha Machine Learning Projects
 
 > **Auteur** : Joseph Mukubu Kapoya  
 > **Organisation** : CodeAlpha Machine Learning Internship  
@@ -7,18 +7,18 @@
 
 ---
 
-## 📋 Présentation Générale
+##  Présentation Générale
 
 Ce dépôt regroupe **3 projets complets de Machine Learning et de Deep Learning** réalisés dans le cadre du stage pratique chez **CodeAlpha**. Chaque projet aborde une problématique distincte de l'apprentissage supervisé, allant des modèles prédictifs tabulaires classiques aux réseaux neuronaux profonds de pointe pour l'analyse audio et la vision par ordinateur.
 
-### 🌟 Les Projets inclus :
-1.  **💳 Credit Scoring Model** : Modélisation et prédiction de la solvabilité bancaire.
-2.  **🎵 Emotion Recognition from Speech** : Reconnaissance et classification des émotions dans la parole.
-3.  **✍️ Handwritten Character & Letter Recognition** : Reconnaissance optique de chiffres (MNIST) et de lettres (EMNIST).
+###  Les Projets inclus :
+1.  ** Credit Scoring Model** : Modélisation et prédiction de la solvabilité bancaire.
+2.  ** Emotion Recognition from Speech** : Reconnaissance et classification des émotions dans la parole.
+3.  ** Handwritten Character & Letter Recognition** : Reconnaissance optique de chiffres (MNIST) et de lettres (EMNIST).
 
 ---
 
-## 🗂️ Structure détaillée du Dépôt
+##  Structure détaillée du Dépôt
 
 Voici l'organisation des fichiers au sein du projet :
 
@@ -51,7 +51,7 @@ CodeAlpha_ML_Projects/
 
 ---
 
-## 🛠️ Installation et Configuration
+##  Installation et Configuration
 
 Pour exécuter ces projets localement, veuillez suivre les étapes suivantes :
 
@@ -95,9 +95,9 @@ Le tableau ci-dessous synthétise la méthodologie et les approches développée
 
 ---
 
-## 🚀 Guide d'Exécution rapide
+##  Guide d'Exécution rapide
 
-### 💳 1. Évaluation du Risque de Crédit
+###  1. Évaluation du Risque de Crédit
 Exécutez le script pour comparer les algorithmes de classification classique :
 ```bash
 cd CodeAlpha_CreditScoring
@@ -105,7 +105,7 @@ python credit_scoring.py
 ```
 *Le script télécharge le dataset et génère la courbe ROC sous `credit_scoring_results.png`.*
 
-### 🎵 2. Reconnaissance Vocale des Émotions
+###  2. Reconnaissance Vocale des Émotions
 Pour entraîner les réseaux de neurones CNN et LSTM :
 ```bash
 cd ../CodeAlpha_EmotionRecognition
@@ -114,7 +114,7 @@ python emotion_recognition.py
 ```
 *Génère le graphique d'entraînement et la matrice de confusion sous `emotion_recognition_results.png` ainsi que les fichiers `.h5` des modèles.*
 
-### ✍️ 3. Reconnaissance d'Écritures Manuscrits
+###  3. Reconnaissance d'Écritures Manuscrits
 Pour entraîner les modèles CNN sur les chiffres (MNIST) ou les lettres (EMNIST) :
 ```bash
 cd ../CodeAlpha_HandwrittenRecognition
@@ -128,7 +128,7 @@ python emnist_letters.py
 
 ---
 
-## 📞 Informations & Contact
+##  Informations & Contact
 
 *   **Organisation** : [CodeAlpha](https://www.codealpha.tech/)
 *   **Auteur** : Joseph Mukubu Kapoya
