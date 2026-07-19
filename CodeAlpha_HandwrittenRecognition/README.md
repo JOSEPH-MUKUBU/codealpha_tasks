@@ -97,12 +97,32 @@ Les scripts génèrent de nombreuses visualisations et sauvegardent les résulta
 
 ### Pour MNIST :
 *   `mnist_examples.png` : Échantillon représentatif de chiffres réels du dataset.
+    
+    ![Exemples MNIST](mnist_examples.png)
+
 *   `handwritten_results.png` : Courbes de performance d'apprentissage (perte et précision d'entraînement vs validation).
+    
+    ![Courbes d'apprentissage MNIST](handwritten_results.png)
+
 *   `prediction_errors.png` : Affiche les cas typiques où le modèle s'est trompé (par exemple, un `9` écrit de manière ambiguë prédit comme un `4` ou un `7`), ce qui aide à analyser les limites du modèle.
+    
+    ![Erreurs de prédiction MNIST](prediction_errors.png)
+
 *   `predictions_demo.png` : Démonstration visuelle de prédictions correctes sur un lot d'images de test.
+    
+    ![Démonstration des prédictions MNIST](predictions_demo.png)
 
 ### Pour EMNIST :
 *   `emnist_examples.png` : Visualisation des caractères et lettres de base.
+    
+    ![Exemples EMNIST](emnist_examples.png)
+
 *   `emnist_results.png` : Courbes d'entraînement et d'évaluation.
+    
+    ![Courbes d'apprentissage EMNIST](emnist_results.png)
+
 *   `emnist_predictions.png` : Échantillon de prédictions sur le jeu de test EMNIST avec labels réels et prédits.
+    
+    ![Prédictions EMNIST](emnist_predictions.png)
+
 *   `best_model.h5` et `emnist_best_model.h5` sont créés pour conserver les poids de réseaux les plus précis.

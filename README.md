@@ -105,6 +105,10 @@ python credit_scoring.py
 ```
 *Le script télécharge le dataset et génère la courbe ROC sous `credit_scoring_results.png`.*
 
+<p align="center">
+  <img src="CodeAlpha_CreditScoring/credit_scoring_results.png" width="500" alt="Courbe ROC Credit Scoring"/>
+</p>
+
 ###  2. Reconnaissance Vocale des Émotions
 Pour entraîner les réseaux de neurones CNN et LSTM :
 ```bash
@@ -113,6 +117,10 @@ cd ../CodeAlpha_EmotionRecognition
 python emotion_recognition.py
 ```
 *Génère le graphique d'entraînement et la matrice de confusion sous `emotion_recognition_results.png` ainsi que les fichiers `.h5` des modèles.*
+
+<p align="center">
+  <img src="CodeAlpha_EmotionRecognition/emotion_recognition_results.png" width="600" alt="Résultats Emotion Recognition"/>
+</p>
 
 ###  3. Reconnaissance d'Écritures Manuscrits
 Pour entraîner les modèles CNN sur les chiffres (MNIST) ou les lettres (EMNIST) :
@@ -125,6 +133,11 @@ python handwritten_recognition.py
 python emnist_letters.py
 ```
 *Génère les visualisations d'exemples de prédictions et les courbes d'apprentissage associées.*
+
+<p align="center">
+  <img src="CodeAlpha_HandwrittenRecognition/predictions_demo.png" width="45%"/>
+  <img src="CodeAlpha_HandwrittenRecognition/emnist_predictions.png" width="45%"/>
+</p>
 
 ---
 

@@ -89,5 +89,7 @@ Le script évalue les modèles sur le jeu de test (200 clients) avec les métriq
 ### Courbe ROC (Receiver Operating Characteristic)
 Une courbe ROC comparant la performance des 3 modèles est automatiquement générée et enregistrée sous le nom de **`credit_scoring_results.png`** à la racine de ce sous-dossier.
 
+![Courbe ROC Credit Scoring](credit_scoring_results.png)
+
 Exemple typique d'évaluation :
 *   Le modèle **Random Forest** et la **Régression Logistique** affichent généralement les meilleurs scores ROC-AUC, le Random Forest capturant mieux les relations non-linéaires du dataset German Credit.

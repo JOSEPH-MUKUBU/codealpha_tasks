@@ -100,3 +100,5 @@ Les callbacks configurés incluent :
 À l'issue de l'entraînement, les fichiers suivants sont générés :
 *   `best_model.h5` / `model_cnn_final.h5` / `model_lstm_final.h5` : Modèles sérialisés réutilisables pour inférence.
 *   **`emotion_recognition_results.png`** : Un graphique combinant les courbes d'apprentissage (perte et précision pour le CNN et le LSTM) et la matrice de confusion finale sur le jeu de test pour visualiser les émotions fréquemment confondues par le modèle (ex: *calm* et *neutral*).
+
+![Résultats de la reconnaissance des émotions](emotion_recognition_results.png)
