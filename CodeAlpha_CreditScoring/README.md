@@ -1,10 +1,10 @@
-# 💳 Credit Scoring Model — CodeAlpha
+#  Credit Scoring Model — CodeAlpha
 
 Ce projet fait partie du stage CodeAlpha en Machine Learning. Il implémente un système de scoring de crédit pour évaluer le risque de défaut de paiement des emprunteurs en comparant plusieurs modèles de classification supervisée.
 
 ---
 
-## 📋 Table des matières
+##  Table des matières
 1. [Présentation du projet](#-présentation-du-projet)
 2. [Dataset](#-dataset)
 3. [Architecture & Méthodologie](#-architecture--méthodologie)
@@ -14,7 +14,7 @@ Ce projet fait partie du stage CodeAlpha en Machine Learning. Il implémente un 
 
 ---
 
-## 📋 Présentation du projet
+##  Présentation du projet
 L'évaluation du crédit (Credit Scoring) est un outil crucial pour les institutions financières afin de décider d'accorder ou non un prêt. L'objectif est d'analyser les attributs financiers et démographiques d'un client pour prédire sa probabilité de défaut.
 
 Ce script compare trois algorithmes classiques de classification :
@@ -24,7 +24,7 @@ Ce script compare trois algorithmes classiques de classification :
 
 ---
 
-## 📊 Dataset
+##  Dataset
 Le projet utilise le **German Credit Dataset** de l'UCI Machine Learning Repository.
 *   **Taille :** 1000 clients (échantillons)
 *   **Attributs (Features) :** 20 variables décrivant la situation financière (montant du crédit, statut du compte, historique de crédit, durée, etc.) et personnelles (âge, statut marital, emploi, logement).
@@ -36,7 +36,7 @@ Le projet utilise le **German Credit Dataset** de l'UCI Machine Learning Reposit
 
 ---
 
-## ⚙️ Architecture & Méthodologie
+##  Architecture & Méthodologie
 
 Le pipeline de Machine Learning est structuré comme suit :
 1.  **Chargement des données :** Téléchargement et parsing du format de fichier brut (séparateur d'espace).
@@ -50,7 +50,7 @@ Le pipeline de Machine Learning est structuré comme suit :
 
 ---
 
-## 🤖 Modèles Entraînés
+##  Modèles Entraînés
 
 *   **Régression Logistique (Logistic Regression) :**
     *   Entraîné sur des variables standardisées.
@@ -63,7 +63,7 @@ Le pipeline de Machine Learning est structuré comme suit :
 
 ---
 
-## 🚀 Installation et Utilisation
+##  Installation et Utilisation
 
 ### Prérequis
 Assurez-vous d'avoir configuré l'environnement virtuel racine et installé les dépendances (`scikit-learn`, `pandas`, `numpy`, `matplotlib`, `seaborn`).
@@ -77,7 +77,7 @@ python credit_scoring.py
 
 ---
 
-## 📈 Résultats et Évaluation
+##  Résultats et Évaluation
 
 Le script évalue les modèles sur le jeu de test (200 clients) avec les métriques suivantes :
 *   **Exactitude (Accuracy) :** Taux global de prédictions correctes.
